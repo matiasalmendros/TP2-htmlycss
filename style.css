@@ -1,0 +1,148 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: rgb(70, 70, 70);
+    padding: 5px;
+}
+
+.blockquote {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Secciones */
+h3 {
+    border-bottom: 1px solid;
+    padding: 5px;
+    margin: 5px;
+}
+
+section {
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+/* Propiedades de texto */
+.parrafo1 {
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.parrafo2 {
+    background-color: rgb(231, 231, 231);
+    border-left: 4px solid gray;
+    color: gray;
+    padding: 5px;
+}
+
+/* Propiedades de caja */
+.caja1 {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0.3px;
+}
+
+.caja2 {
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0.3px;
+    background-color: bisque;
+}
+
+/* Posicionamiento */
+.relativo {
+    background-color: #dff7f9;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    top: 0;
+    left: 5px;
+}
+
+.absoluto {
+    background-color: #2e9798;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    left: 50vw;
+    top: 30rem;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #8c9afb;
+    border-radius: 1rem;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Animaciones */
+.animacion {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    transition: 2s;
+}
+
+.animacion:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+.mover {
+    border-radius: 100%;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    animation: mover 2s infinite;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(151, 131, 238);
+    }
+
+    section {
+        padding: 4px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+}
